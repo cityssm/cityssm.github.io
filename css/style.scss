@@ -1,4 +1,10 @@
-.jumbotron--header {
+$white: #fff;
+
+* {
+  font-family: 'Barlow', sans-serif;
+}
+
+.hero {
   background-image: url('../img/header.jpg');
   background-position: bottom;
   background-size: cover;
@@ -6,10 +12,11 @@
   h1 {
     margin: 50px 0;
     font-size: 100px;
+    color: $white;
   }
 }
 
-.jumbotron--footer {
+.footer {
   font-size: 20px;
-  background-color: #333;
+  color: $white;
 }

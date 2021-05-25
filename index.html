@@ -6,86 +6,186 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="jumbotron jumbotron-fluid jumbotron--header">
-    <div class="container">
-      <h1 class="text-center text-white" title="City of Sault Ste. Marie on GitHub">
-      <img class="img-fluid" src="img/header-cityssm.png" alt="Sault Ste. Marie" />
-      on
-      <img class="img-fluid" src="img/header-github.png" alt="GitHub" /></h1>
+  <header class="hero">
+    <div class="hero-body has-text-centered">
+      <h1 class="columns is-justify-content-center" title="City of Sault Ste. Marie on GitHub">
+        <span class="column is-narrow"><img src="img/header-cityssm.png" alt="Sault Ste. Marie" /></span>
+        <span class="column is-narrow">on</span>
+        <span class="column is-narrow"><img src="img/header-github.png" alt="GitHub" /></span>
+      </h1>
     </div>
   </header>
 
-  <section class="container">
-    <p class="lead text-center">
-      Welcome to the City of Sault Ste. Marie's portal for open code and open content.</p>
-  </section>
-
-  <section class="container">
-    <h2 class="display-4 text-center mb-4">
-      Our Repositories</h2>
-
-    <div class="row">
-      <div class="col-md">
-
-        <div class="alert alert-primary">
-          <p>
-            To encourage collaboration between ourselves, the general public, other municipalities, and other organizations,
-            the City is releasing some of it's coding efforts to the open source community.</p>
-          <p class="text-right mb-0">
-            <a class="alert-link" href="https://github.com/cityssm/">View it all on GitHub</a></p>
-        </div>
-
+  <div class="container px-2 my-4">
+    <section class="message is-info">
+      <div class="message-body">
+        <p class="has-text-weight-bold has-text-centered">
+          Welcome to the City of Sault Ste. Marie's portal for open code and open content.</p>
+        <p class="my-2">
+          To encourage collaboration between ourselves, the general public, other municipalities, and other organizations,
+          the City is releasing some of it's coding efforts to the open source community.
+        </p>
+        <p class="has-text-right">
+          <a class="button is-info" href="https://github.com/cityssm/">View all repositories on GitHub</a>
+        </p>
       </div>
-      <div class="col-md">
-        <div class="card mb-3">
-          <div class="card-body">
-            <h3 class="card-title">
-              PDF Flattener<br />
-              <a href="https://github.com/cityssm/pdfFlattener">cityssm/pdfFlattener</a>
-            </h3>
-            <p class="card-text">Secure PDF documents by making floating redactions and form entries permanent. </p>
-          </div>
-        </div>
-        <div class="card mb-3">
-          <div class="card-body">
-            <h3 class="card-title">
-              DocuShare jQuery<br />
-              <a href="https://github.com/cityssm/dsJQuery">cityssm/dsJQuery</a>
-            </h3>
-            <p class="card-text">A jQuery-like wrapper for the DocuShare Java API.</p>
-          </div>
-        </div>
-        <div class="card mb-3">
-          <div class="card-body">
-            <h3 class="card-title">
-              <a href="https://github.com/cityssm/fa5-power-transforms-css">cityssm/fa5-power-transforms-css</a>
-            </h3>
-            <p class="card-text">Font Awesome 5 "Power Transform" like functionality using straight CSS.</p>
+    </section>
+
+  </div>
+
+  <section class="container px-2">
+    <h2 class="title is-3 my-4">Modules</h2>
+
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-4 my-3">Node Modules on npm</h3>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/unleet">unleet</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/unleet" />
+            </p>
+            <p>Removes symbols and character combinations from a text string, and replaces them with the letters they commonly represent.</p>
           </div>
         </div>
         <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">
-              MPAC YETF Parser<br />
-              <a href="https://github.com/cityssm/mpacParser">cityssm/mpacParser</a>
-            </h3>
-            <p class="card-text">Makes sense of the Year End Tax Files provided annually by MPAC.</p>
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/simple-password-generator">simple-password-generator</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/simple-password-generator" />
+            </p>
+            <p>Makes generating simple or complex, appropriate passwords a breeze.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/get-site-urls">get-site-urls</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/get-site-urls" />
+            </p>
+            <p>Gets all of the URLs from a website.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/date-diff">date-diff</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/date-diff" />
+            </p>
+            <p>Calculates the difference between two JavaScript Dates.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/mssql-multi-pool">mssql-multi-pool</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/mssql-multi-pool" />
+            </p>
+            <p>A simple way to manage connections to multiple SQL Server databases using the Node.js Tedious driver.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/is-private-network-address">is-private-network-address</a>
+            </h4>
+            <p>
+              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/is-private-network-address" />
+            </p>
+            <p>Determines whether or not a network address is private or internal.</p>
           </div>
         </div>
 
+        <a class="button is-block is-link mt-3" href="https://www.npmjs.com/search?q=%40cityssm" target="_blank">
+          See all packages on npm
+        </a>
+      </div>
+      <div class="column">
+        <h3 class="title is-4 my-3">Other Modules</h3>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              DocuShare jQuery<br />
+              <a href="https://github.com/cityssm/dsJQuery">cityssm/dsJQuery</a>
+            </h4>
+            <p>A jQuery-like wrapper for the DocuShare Java API.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="has-text-weight-bold">
+              MPAC YETF Parser<br />
+              <a href="https://github.com/cityssm/mpacParser">cityssm/mpacParser</a>
+            </h4>
+            <p>Makes sense of the Year End Tax Files provided annually by MPAC.</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="columns">
+      <div class="column">
+        <h2 class="title is-3 my-4">Applications</h2>
+
+        <div class="card">
+          <div class="card-content">
+            <h3 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/lottery-licence-manager">Lottery Licence Manager</a>
+            </h3>
+            <p><span class="tag">Under Development</span></p>
+            <p>A web application for managing AGCO's municipal lottery licensing requirements in Ontario.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/pdfFlattener">PDF Flattener</a>
+            </h3>
+            <p>Secure PDF documents by making floating redactions and form entries permanent.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3 my-4">Data</h2>
+
+        <div class="card">
+          <div class="card-content">
+            <h3 class="has-text-weight-bold">
+              <a href="https://github.com/cityssm/property-tax-rate-data">property-tax-rate-data</a>
+            </h3>
+            <p>Historical property tax rates for Sault Ste. Marie in CSV format .</p>
+          </div>
+        </div>
+      </div>
   </section>
 
-  <footer class="jumbotron jumbotron-fluid jumbotron--footer mb-0 mt-4 pt-4 pb-4">
-    <div class="container text-white text-right">
-      Developed with <span title="love">&hearts;</span> by
-      <a class="text-white" href="http://saultstemarie.ca/" title="The City of Sault Ste. Marie"><img src="img/footer-cityssm.png" alt="City of Sault Ste. Marie" /></a>
+  <footer class="footer has-background-black-ter mt-6">
+    <div class="container">
+      <div class="columns is-mobile is-variable is-1 is-justify-content-right is-align-items-center">
+        <span class="column is-narrow">Developed with</span>
+        <span class="column is-narrow" title="love" style="font-size:33px">&hearts;</span>
+        <span class="column is-narrow">by</span>
+        <span class="column is-narrow"><a href="http://saultstemarie.ca/" title="The City of Sault Ste. Marie"><img src="img/footer-cityssm.png" alt="City of Sault Ste. Marie" /></a></span>
+      </div>
     </div>
   </footer>
 </body>
