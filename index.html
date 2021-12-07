@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://unpkg.com/@cityssm/bulma-a11y@0.3.0/bulma-a11y.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@cityssm/bulma-a11y@0.4.0/bulma-a11y.min.css" integrity="sha256-YrqCMmMEmKYmLuLlI1phSUZA4V4V104f2CiZB1B1cvc=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -26,8 +26,8 @@
   <div class="container px-2 my-4">
     <section class="message is-info">
       <div class="message-body">
-        <p class="has-text-weight-bold has-text-centered">
-          Welcome to the City of Sault Ste. Marie's portal for open code and open content.</p>
+        <h2 class="has-text-weight-bold has-text-centered is-size-3">
+          Welcome to the City of Sault Ste. Marie's portal for open code and open content.</h2>
         <p class="my-2">
           To encourage collaboration between ourselves, the general public, other municipalities, and other organizations,
           the City is releasing some of it's coding efforts to the open source community.
@@ -37,190 +37,191 @@
         </p>
       </div>
     </section>
-
   </div>
 
+  <hr />
+
   <section class="container px-2">
-    <h2 class="title is-3 my-4">Modules</h2>
-
     <div class="columns">
+      <div class="column is-two-fifths">
+        <h2 class="title is-3">Municipal Applications</h2>
+        <p>
+          Full applications, built to manage municipal operations.
+        </p>
+      </div>
       <div class="column">
-        <h3 class="title is-4 my-3">Javascript Modules on npm</h3>
+        <div class="content">
+          <h3 class="title is-4">Releases</h3>
 
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/unleet">unleet</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/unleet" />
-            </p>
-            <p>Removes symbols and character combinations from a text string, and replaces them with the letters they commonly represent.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/simple-password-generator">simple-password-generator</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/simple-password-generator" />
-            </p>
-            <p>Makes generating simple or complex, appropriate passwords a breeze.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/get-site-urls">get-site-urls</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/get-site-urls" />
-            </p>
-            <p>Gets all of the URLs from a website.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/date-diff">date-diff</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/date-diff" />
-            </p>
-            <p>Calculates the difference between two JavaScript Dates.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/mssql-multi-pool">mssql-multi-pool</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/mssql-multi-pool" />
-            </p>
-            <p>A simple way to manage connections to multiple SQL Server databases using the Node.js Tedious driver.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/is-private-network-address">is-private-network-address</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/is-private-network-address" />
-            </p>
-            <p>Determines whether or not a network address is private or internal.</p>
-          </div>
-        </div>
+          <h4 class="title is-5 mb-1">
+            <a href="https://github.com/cityssm/lottery-licence-manager">Lottery Licence Manager</a>
+          </h4>
+          <p>
+            <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/cityssm/lottery-licence-manager" /><br />
+            A web application for managing AGCO's municipal lottery licensing requirements in Ontario.
+          </p>
 
+          <h3 class="title is-4">Testing and Development</h3>
+
+          <h4 class="title is-5 mb-1">
+            <a href="https://github.com/cityssm/corporate-records-manager">Corporate Records Manager</a>
+          </h4>
+          <p>
+            <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/cityssm/corporate-records-manager?include_prereleases" /><br />
+            A system for tracking various corporate records administered by the City Clerks Department.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <hr />
+
+  <section class="container px-2">
+    <div class="columns">
+      <div class="column is-two-fifths">
+        <h2 class="title is-3">NPM Modules</h2>
+        <p>
+          Reusable JavaScript and CSS modules.
+        </p>
         <a class="button is-block is-link mt-3" href="https://www.npmjs.com/search?q=%40cityssm" target="_blank" rel="noopener noreferrer">
           See all packages on npm
         </a>
       </div>
       <div class="column">
-        <h3 class="title is-4 my-3">CSS Modules on npm</h3>
+        <div class="content">
+          <h3 class="title is-4">JavaScript Modules</h3>
 
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/bulma-a11y">bulma-a11y</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/bulma-a11y" />
-            </p>
-            <p>Bulma with increased colour contrast to meet accessibility requirements.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/bulma-sticky-table">bulma-sticky-table</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/bulma-sticky-table" />
-            </p>
-            <p>A Bulma-friendly way to stick a table header, table footer, first column, or all three!</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/simple-fa5-checkbox">simple-fa5-checkbox</a>
-            </h4>
-            <p>
-              <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/simple-fa5-checkbox" />
-            </p>
-            <p>Simple Font Awesome 5 Checkboxes.</p>
-          </div>
-        </div>
+          <h4 class="title is-5 mb-1">
+            <a href="https://github.com/cityssm/unleet">unleet</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/unleet" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/unleet" /><br />
+            Removes symbols and character combinations from a text string, and replaces them with the letters they commonly represent.
+          </p>
 
-        <h3 class="title is-4 my-3">Other Modules</h3>
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/simple-password-generator">simple-password-generator</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/simple-password-generator" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/simple-password-generator" /><br />
+            Makes generating simple or complex, appropriate passwords a breeze.
+          </p>
 
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              DocuShare jQuery<br />
-              <a href="https://github.com/cityssm/dsJQuery">cityssm/dsJQuery</a>
-            </h4>
-            <p>A jQuery-like wrapper for the DocuShare Java API.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h4 class="has-text-weight-bold">
-              MPAC YETF Parser<br />
-              <a href="https://github.com/cityssm/mpacParser">cityssm/mpacParser</a>
-            </h4>
-            <p>Makes sense of the Year End Tax Files provided annually by MPAC.</p>
-          </div>
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/get-site-urls">get-site-urls</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/get-site-urls" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/get-site-urls" /><br />
+            Gets all of the URLs from a website.
+          </p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/mssql-multi-pool">mssql-multi-pool</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/mssql-multi-pool" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/mssql-multi-pool" /><br />
+            A simple way to manage connections to multiple SQL Server databases using the Node.js Tedious driver.
+          </p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/date-diff">date-diff</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/date-diff" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/date-diff" /><br />
+            Calculates the difference between two JavaScript Dates.
+          </p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/is-private-network-address">is-private-network-address</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/is-private-network-address" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/is-private-network-address" /><br />
+            Determines whether or not a network address is private or internal.
+          </p>
+
+          <h3 class="title is-4">CSS Modules</h3>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/bulma-a11y">bulma-a11y</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/bulma-a11y" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/bulma-a11y" /><br />
+            Bulma with increased colour contrast to meet accessibility requirements.
+          </p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/bulma-sticky-table">bulma-sticky-table</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/bulma-sticky-table" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/bulma-sticky-table" /><br />
+            A Bulma-friendly way to stick a table header, table footer, first column, or all three!
+          </p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/simple-fa5-checkbox">simple-fa5-checkbox</a>
+          </h4>
+          <p>
+            <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cityssm/simple-fa5-checkbox" />
+            <img alt="npm" src="https://img.shields.io/npm/dm/@cityssm/simple-fa5-checkbox" /><br />
+            Simple Font Awesome 5 Checkboxes.
+          </p>
         </div>
       </div>
     </div>
+  </section>
 
+  <hr />
+
+  <section class="container px-2">
     <div class="columns">
-      <div class="column">
-        <h2 class="title is-3 my-4">Applications</h2>
-
-        <div class="card">
-          <div class="card-content">
-            <h3 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/lottery-licence-manager">Lottery Licence Manager</a>
-            </h3>
-            <p><span class="tag">Under Development</span></p>
-            <p>A web application for managing AGCO's municipal lottery licensing requirements in Ontario.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h3 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/corporate-records-manager">Corporate Records Manager</a>
-            </h3>
-            <p><span class="tag">Under Development</span></p>
-            <p>A system for tracking various corporate records administered by the City Clerks Department.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h3 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/pdfFlattener">PDF Flattener</a>
-            </h3>
-            <p>Secure PDF documents by making floating redactions and form entries permanent.</p>
-          </div>
-        </div>
+      <div class="column is-two-fifths">
+        <h2 class="title is-3">More Goodies</h2>
+        <p>
+          Repositories worth mentioning.
+        </p>
       </div>
       <div class="column">
-        <h2 class="title is-3 my-4">Data</h2>
+        <div class="content">
+          <h3 class="title is-4">Other Applications</h3>
 
-        <div class="card">
-          <div class="card-content">
-            <h3 class="has-text-weight-bold">
-              <a href="https://github.com/cityssm/property-tax-rate-data">property-tax-rate-data</a>
-            </h3>
-            <p>Historical property tax rates for Sault Ste. Marie in CSV format .</p>
-          </div>
+          <h4 class="title is-5 mt-3 mb-1">
+            <a href="https://github.com/cityssm/pdfFlattener">PDF Flattener</a>
+          </h4>
+          <p>Secure PDF documents by making floating redactions and form entries permanent.</p>
+
+          <h3 class="title is-4">Other Modules</h3>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            DocuShare jQuery<br />
+            <a href="https://github.com/cityssm/dsJQuery">cityssm/dsJQuery</a>
+          </h4>
+          <p>A jQuery-like wrapper for the DocuShare Java API written in Java.</p>
+
+          <h4 class="title is-5 mt-3 mb-1">
+            MPAC YETF Parser<br />
+            <a href="https://github.com/cityssm/mpacParser">cityssm/mpacParser</a>
+          </h4>
+          <p>Makes sense of the Year End Tax Files provided annually by MPAC.</p>
         </div>
+
+        <h3 class="title is-4">Data</h3>
+
+        <h4 class="title is-5 mt-3 mb-1">
+          <a href="https://github.com/cityssm/property-tax-rate-data">property-tax-rate-data</a>
+        </h4>
+        <p>Historical property tax rates for Sault Ste. Marie in CSV format .</p>
       </div>
+    </div>
   </section>
 
   <footer class="footer has-background-black-ter mt-6">
